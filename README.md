@@ -49,17 +49,28 @@ Login to WordPress and start managing your site; all data is stored in the MySQL
 
 ![Welcome-wordpress](screenshots/welcom_to_word_press.png)
 
-##  docker exec -it <container_id>  /bin/bash
-## Mysql login 
-##  mysql -u wordpress -p 
+
+This screenshot shows how to log in to a MySQL database and how to access the container
+
+# docker exec -it <container_id>  /bin/bash
+# Mysql login 
+#  mysql -u wordpress -p 
 
 ![Mysql-login-and-container-exec](screenshots/login_mysql.png)
 
+---------------------
 
-## Inside mysql 
-## use wordpress;
-## show tablesl
-## select * from wp-user;
+
+##Inside mysql 
+# use wordpress;
+# show tables
+# select * from wp_users;
+
+use wordpress;       → Selects the WordPress database to work with.
+
+show tables;         → Lists all tables inside the selected database.
+
+select * from wp_users;  → Retrieves all records from the wp_users table (WordPress users).
 
 ![Inside-Mysql](screenshots/inside_mysql.png)
 
