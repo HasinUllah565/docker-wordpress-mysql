@@ -19,20 +19,20 @@ In this docker-compose.yml file, we created a multi-container setup for WordPres
 
 `cat docker-compose.yml`
 
-![Dockercomposefile](screenshots/docker_composefile.png)
+![Dockercomposefile](images/docker_composefile.png)
 
 ##   How to run 
 ##`docker-compose up`
 
 This project demonstrates how to run WordPress with a MySQL database using Docker Compose. It includes multi-container setup, volumes for data persistence, and environment variables for service communication.
 
-![Run](screenshots/docker-compose_up.png)
+![Run](images/docker-compose_up.png)
 
 
 #`docker-compose ps`
 `docker-compose ps` shows the list of all containers created by your Docker Compose file, their current status (running or stopped), and which ports they are using.
 
-![Up](screenshots/docker-compose_ls.png)
+![Up](images/docker-compose_ls.png)
 
 
 ## WordPress User-daashboard 
@@ -40,17 +40,17 @@ This project demonstrates how to run WordPress with a MySQL database using Docke
 Access WordPress from your browser using the IP and port you assigned (e.g., `http://localhost:8000`).
 Login to WordPress and start managing your site; all data is stored in the MySQL container.
 
-![User-dashboard-wordpress](screenshots/browser_wordpress.png)
+![User-dashboard-wordpress](images/browser_wordpress.png)
 
 # wordpress Login 
 #Enter your username and password 
 
-![Login](screenshots/wordpress_login_page.png)
+![Login](images/wordpress_login_page.png)
 
 
 # Welcome to word press 
 
-![Welcome-wordpress](screenshots/welcom_to_word_press.png)
+![Welcome-wordpress](images/welcom_to_word_press.png)
 
 
 
@@ -60,7 +60,7 @@ Login to WordPress and start managing your site; all data is stored in the MySQL
 `Mysql login`
 `mysql -u wordpress -p`
 
-![Mysql-login-and-container-exec](screenshots/login_mysql.png)
+![Mysql-login-and-container-exec](images/login_mysql.png)
 
 ---------------------
 
@@ -77,7 +77,7 @@ Login to WordPress and start managing your site; all data is stored in the MySQL
 
 `select * from wp_users;`  → Retrieves all records from the wp_users table (WordPress users).
 
-![Inside-Mysql](screenshots/inside_mysql.png)
+![Inside-Mysql](images/inside_mysql.png)
 
 
 
