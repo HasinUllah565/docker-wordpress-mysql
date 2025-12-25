@@ -15,6 +15,8 @@ This confirms successful integration between WordPress and MySQL.
 
 ## `docker-compose.yml` file 
 In this docker-compose.yml file, we created a multi-container setup for WordPress and MySQL.The MySQL service is used as the database and data is stored using Docker volumes.The WordPress service depends on the database, exposes port 8000, and connects to MySQL using environment variables.Docker volumes are used to persist data even if containers are restarted or removed.
+
+
 `cat docker-compose.yml`
 
 ![Dockercomposefile](screenshots/docker_composefile.png)
